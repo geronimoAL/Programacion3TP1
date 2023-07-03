@@ -18,7 +18,16 @@ import Automovil from './Clases/automovil';
 import Escuela from './Clases/escuela';
 import { CuentaBancaria } from './Clases/cuentaBancaria';
 import FormasGeometricas from './Clases/figurasGeometricas';
+import SaludoPersonalizado from './Props/SaludoPersonalizado';
+import Usuario from './Props/FormularioUsuario';
+import FormularioUsuario from './Props/FormularioUsuario';
 // import CuentaBancaria from './Clases/cuentaBancaria';
+import login from './Props/login';
+import Login from './Props/login';
+import LoginForm from './Props/login';
+import Click from './Props/hora';
+import Reloj from './Props/hora';
+import Imagenes from './Props/Imagen';
 
 
 const root = ReactDOM.createRoot(
@@ -39,14 +48,24 @@ root.render(
       <TextAreaExample/>
       <RadioButton options={options}/>
       <SwitchButton/> */}
-      <h1>TRABAJO PRACTICO N°2</h1>
+      {/* <h1>TRABAJO PRACTICO N°2</h1>
       <Automovil/>
       <hr></hr>
       <Escuela/>
       <hr></hr>
       <CuentaBancaria/>
       <hr></hr>
-      <FormasGeometricas/>
+      <FormasGeometricas/> */}
+      <h1>TRABAJO PRÁCTICO N°3</h1>
+      <SaludoPersonalizado/>
+      <hr></hr>
+      <FormularioUsuario/>
+      <hr />
+      <LoginForm/>
+      <hr></hr>
+      <Reloj/>
+      <hr></hr>
+      <Imagenes/>
      </div>
     <App />
   </React.StrictMode>
