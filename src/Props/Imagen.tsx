@@ -52,6 +52,7 @@ export default function Imagenes(){
 
       {showMore && <p>{sculpture.description}</p>}
       <img src={sculpture.url} alt={sculpture.alt} style={{width:ancho,height:largo} }/>
+      <br></br>
       <button onClick={bigImage}>Agrandar</button>
       <button onClick={smallImage}>Reducir</button>
     </>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 interface State {
   nombre: string;
@@ -8,19 +8,35 @@ interface State {
 interface Props {}
 
 class FormularioUsuario extends Component<Props, State> {
-
   render() {
     const usuario = {
-      nombre: 'Gerónimo',
+      nombre: "Gerónimo",
       edad: 25,
-      apellido:"Luminari"
+      apellido: "Luminari",
     };
     return (
       <div>
-        <h1>Usuario</h1>
-        <h3>nombre:{usuario.nombre}</h3>
-        <h3>edad:{usuario.edad}</h3>
-        <h3>apellido:{usuario.apellido}</h3>
+        <div className="container ">
+        <div style={{ fontWeight: "500" }}>Usuario</div>
+        <div className="input-group mb-3">
+          <span style={{ fontWeight: "500" }} className="input-group-text" id="basic-addon1">
+            Nombre:
+          </span>
+          <span> {usuario.nombre}</span>
+        </div>
+        <div className="input-group mb-3">
+          <span style={{ fontWeight: "500" }} className="input-group-text" id="basic-addon1">
+            Apellido:
+          </span>
+          <span> {usuario.apellido}</span>
+        </div>
+        <div className="input-group mb-3">
+          <span style={{ fontWeight: "500" }} className="input-group-text" id="basic-addon1">
+            Edad:
+          </span>
+          <span> {usuario.edad}</span>
+        </div>
+        </div>
       </div>
     );
   }

@@ -1,35 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
+import "./BotonSwitch.css";
 
 function SwitchButton() {
-  const [selectedOption, setSelectedOption] = useState('');
+  const [darkMode, setIsToggled] = useState(false);
 
-  const handleOptionChange = (event:React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedOption(event.target.value);
+  const handleToggle = () => {
+    setIsToggled(!darkMode);
   };
-
+  useEffect(() => {
+    document.body.classList.toggle("dark-mode", darkMode);
+  }, [darkMode]);
   return (
-    <div>
+    <>
       <input
-        type="radio"
-        value="option1"
-        checked={selectedOption === 'option1'}
-        onChange={handleOptionChange}
-      />
-    <input
-        type="radio"
-        value="option2"
-        checked={selectedOption === 'option2'}
-        onChange={handleOptionChange}
-      />
-      <input
-        type="radio"
-        value="option3"
-        checked={selectedOption === 'option3'}
-        onChange={handleOptionChange}
-      />
-    </div>
+          className="react-switch-checkbox"
+          id={`react-switch-new`}
+          type="checkbox"
+          checked={darkMode}
+          onChange={handleToggle}
+        />
+       <label className="react-switch-label" htmlFor={`react-switch-new`}>
+       <span className={`react-switch-button`} onClick={handleToggle} /> 
+      </label>
+    </>
   );
 }
 
-
 export default SwitchButton;
+
+

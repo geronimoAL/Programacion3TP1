@@ -9,7 +9,7 @@ function TextAreaExample() {
         value={value}
         onChange={(event) => setValue(event.target.value)}
       />
-      <p>Entered text: {value}</p>
+      <p>Texto: {value}</p>
     </div>
   );
 }

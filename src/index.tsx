@@ -37,7 +37,8 @@ const options = ["Opcion 1", "Opcion 2", "Opcion 3"];
 root.render(
   <React.StrictMode>
       <div className="App">
-      {/* <h1>TRABAJO PRACTICO N°1</h1>
+      {/* <SwitchButton/>
+      <h1>TRABAJO PRACTICO N°1</h1>
       <CheckBox label="rojo"/>
       <ToDoList/>
       <BottonGroup/>
@@ -46,17 +47,16 @@ root.render(
       <InputSlider/>
       <InputText/>
       <TextAreaExample/>
-      <RadioButton options={options}/>
-      <SwitchButton/> */}
-      {/* <h1>TRABAJO PRACTICO N°2</h1>
+      <RadioButton options={options}/> */}
+       <h1>TRABAJO PRACTICO N°2</h1>
       <Automovil/>
       <hr></hr>
       <Escuela/>
       <hr></hr>
       <CuentaBancaria/>
       <hr></hr>
-      <FormasGeometricas/> */}
-      <h1>TRABAJO PRÁCTICO N°3</h1>
+      <FormasGeometricas/> 
+       {/* <h1>TRABAJO PRÁCTICO N°3</h1>
       <SaludoPersonalizado/>
       <hr></hr>
       <FormularioUsuario/>
@@ -65,7 +65,7 @@ root.render(
       <hr></hr>
       <Reloj/>
       <hr></hr>
-      <Imagenes/>
+      <Imagenes/>  */}
      </div>
     <App />
   </React.StrictMode>
